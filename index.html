@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amer Shrshar — Frontend Engineer</title>
+  <meta name="description" content="Amer Shrshar — Frontend Engineer and Co-Founder of Acugnito ERP. React.js, Next.js, ERPNext and .NET banking systems. Damascus, Syria." />
+  <meta name="theme-color" content="#F3EFE6" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0D1618" media="(prefers-color-scheme: dark)" />
+  <meta property="og:title" content="Amer Shrshar — Frontend Engineer" />
+  <meta property="og:description" content="Turning complex business rules into clean, reliable interfaces." />
+  <meta property="og:type" content="website" />
+  <link rel="alternate" hreflang="en" href="https://amermshrshar.github.io/" />
+  <link rel="alternate" hreflang="ar" href="https://amermshrshar.github.io/ar/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231E4D57'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='30' fill='%23E9D8B4'%3EA%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=4" />
+  <script>
+    /* Apply saved theme before paint to avoid a flash */
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a href="#home" class="brand" aria-label="Amer Shrshar — home">
+        <span class="brand__mark">A<em>S</em></span>
+        <span class="brand__text">Amer Shrshar</span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <a class="lang-switch" href="ar/" hreflang="ar" lang="ar" title="النسخة العربية">عربي</a>
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle colour theme">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+        </button>
+        <a class="btn btn--small btn--ghost hide-sm" href="assets/Amer-Shrshar-CV.pdf" download>CV <span aria-hidden="true">↓</span></a>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="status reveal">
+            <span class="status__dot"></span> Open to frontend &amp; product engineering roles
+            <span class="status__sep">·</span> Damascus
+            <span class="status__sep">·</span> <span id="clock" class="mono">--:--</span>
+          </p>
+
+          <h1 class="hero__title reveal">
+            Amer Shrshar<span class="accent">.</span>
+          </h1>
+          <p class="hero__role reveal">
+            <span class="muted">I work as a</span>
+            <span class="rotator" aria-live="polite">
+              <span class="rotator__item is-active">Frontend Engineer</span>
+              <span class="rotator__item">ERP Co-Founder</span>
+              <span class="rotator__item">Software Engineer</span>
+            </span>
+          </p>
+
+          <p class="hero__lede reveal">
+            I turn <em>complex business rules</em> into clean, reliable interfaces —
+            from a production ERP platform built in React.js to .NET software that drives bank ATMs.
+          </p>
+
+          <div class="hero__cta reveal">
+            <a class="btn btn--primary" href="#work">View my work <span aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost" href="assets/Amer-Shrshar-CV.pdf" download>Download CV</a>
+          </div>
+
+          <dl class="stats reveal">
+            <div class="stat"><dt>Production clients</dt><dd><span data-count="5">0</span></dd></div>
+            <div class="stat"><dt>ERP modules designed</dt><dd><span data-count="6">0</span></dd></div>
+            <div class="stat"><dt>ERPNext modules implemented</dt><dd><span data-count="5">0</span></dd></div>
+            <div class="stat"><dt>Years shipping</dt><dd><span data-count="2">0</span>+</dd></div>
+          </dl>
+        </div>
+
+        <!-- Interface sketch -->
+        <div class="hero__visual reveal" aria-hidden="true">
+          <div class="mock">
+            <div class="mock__bar">
+              <i></i><i></i><i></i>
+              <span class="mock__url mono">erp.acugnito.com / dashboard</span>
+            </div>
+            <div class="mock__body">
+              <aside class="mock__side">
+                <span class="mock__logo">Acugnito</span>
+                <span class="is-on">HRM</span>
+                <span>Financials</span>
+                <span>Inventory</span>
+                <span>Customer Service</span>
+                <span>Service Mgmt</span>
+                <span>Leasing</span>
+              </aside>
+              <div class="mock__main">
+                <div class="mock__kpis">
+                  <div><small>Employees</small><b>248</b><em class="up">+4.2%</em></div>
+                  <div><small>Payroll</small><b>98%</b><em class="up">on time</em></div>
+                  <div><small>Requests</small><b>31</b><em>pending</em></div>
+                </div>
+                <div class="mock__chart">
+                  <svg viewBox="0 0 300 110" preserveAspectRatio="none">
+                    <defs>
+                      <linearGradient id="g1" x1="0" x2="0" y1="0" y2="1">
+                        <stop offset="0" stop-color="currentColor" stop-opacity=".28"/>
+                        <stop offset="1" stop-color="currentColor" stop-opacity="0"/>
+                      </linearGradient>
+                    </defs>
+                    <path class="mock__area" d="M0,80 C30,70 45,74 70,60 C95,46 110,58 140,44 C170,30 185,40 210,28 C235,18 260,26 300,12 L300,110 L0,110 Z" fill="url(#g1)"/>
+                    <path class="mock__line" d="M0,80 C30,70 45,74 70,60 C95,46 110,58 140,44 C170,30 185,40 210,28 C235,18 260,26 300,12" fill="none" stroke="currentColor" stroke-width="2.2"/>
+                  </svg>
+                </div>
+                <div class="mock__rows">
+                  <div><span class="pill pill--ok">Approved</span><i style="--w:72%"></i></div>
+                  <div><span class="pill pill--wait">Review</span><i style="--w:54%"></i></div>
+                  <div><span class="pill pill--ok">Approved</span><i style="--w:81%"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="float-chip float-chip--a"><span class="mono">role</span> = "admin" ✓</div>
+          <div class="float-chip float-chip--b">6 modules · live in production</div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#work" aria-label="Scroll to work"><span></span>Scroll</a>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section" id="work">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <span class="eyebrow">(01) Selected work</span>
+          <h2>Things I've built &amp; shipped.</h2>
+          <p class="section__sub">Real systems, used by real businesses — each one a set of business rules made usable.</p>
+        </header>
+
+        <!-- Case 1: Acugnito -->
+        <article class="case reveal">
+          <div class="case__meta">
+            <span class="case__num mono">01 / 04</span>
+            <span class="case__kicker">Co-Founder · Product &amp; Frontend</span>
+            <h3>Acugnito ERP</h3>
+            <p>
+              Co-founded an Enterprise Resource Planning platform and designed the business logic across six modules —
+              HRM, Financials, Inventory, Customer Service, Service Management and Leasing. Built the complete
+              React.js frontend architecture, embedding validation and role-based workflows directly into the interface.
+            </p>
+            <ul class="case__facts">
+              <li><b>5</b> clients in production</li>
+              <li><b>6</b> modules end-to-end</li>
+              <li><b>100%</b> of the frontend</li>
+            </ul>
+            <ul class="tags">
+              <li>React.js</li><li>Material-UI</li><li>REST APIs</li><li>Swagger</li><li>RBAC</li>
+            </ul>
+            <div class="case__links">
+              <a class="link-arrow" href="https://erp.demo.acugnito.com/sign-in" target="_blank" rel="noopener">Open live demo <span>↗</span></a>
+              <span class="hint mono">login: admin / admin</span>
+            </div>
+          </div>
+          <div class="case__visual case__visual--modules" aria-hidden="true">
+            <div class="orbit">
+              <div class="orbit__core"><span>Acugnito</span><small>ERP core</small></div>
+              <span class="orbit__node" style="--a:0deg">HRM</span>
+              <span class="orbit__node" style="--a:60deg">Financials</span>
+              <span class="orbit__node" style="--a:120deg">Inventory</span>
+              <span class="orbit__node" style="--a:180deg">Customer<br/>Service</span>
+              <span class="orbit__node" style="--a:240deg">Service<br/>Mgmt</span>
+              <span class="orbit__node" style="--a:300deg">Leasing</span>
+              <svg class="orbit__ring" viewBox="0 0 200 200"><circle cx="100" cy="100" r="78"/><circle cx="100" cy="100" r="50"/></svg>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case 2: ATM -->
+        <article class="case case--flip reveal">
+          <div class="case__meta">
+            <span class="case__num mono">02 / 04</span>
+            <span class="case__kicker">STH Company · Banking systems</span>
+            <h3>ATM cash-dispensing engine</h3>
+            <p>
+              Built a .NET desktop application for bank ATMs on the CEN/XFS standard. Its dispensing algorithm
+              combines a <em>greedy strategy</em> with <em>backtracking</em> to find a valid, optimal mix of banknotes
+              from whatever is left in the cassettes — then hands it to the hardware layer that drives the device.
+            </p>
+            <ul class="tags">
+              <li>C# / .NET</li><li>CEN/XFS</li><li>Algorithms</li><li>Hardware integration</li>
+            </ul>
+            <p class="hint">Try it — the simulator runs the same idea right here in your browser.</p>
+          </div>
+          <div class="case__visual">
+            <div class="atm" id="atm">
+              <div class="atm__head">
+                <span class="mono">dispense --amount</span>
+                <span class="atm__badge">simulator</span>
+              </div>
+              <div class="atm__cassettes" id="cassettes"></div>
+              <form class="atm__form" id="atmForm" autocomplete="off">
+                <label for="amount" class="sr-only">Amount</label>
+                <input id="amount" inputmode="numeric" value="6600" aria-describedby="atmOut" />
+                <button class="btn btn--primary btn--small" type="submit">Dispense</button>
+              </form>
+              <div class="atm__quick">
+                <button type="button" data-amt="6600">6,600</button>
+                <button type="button" data-amt="11400">11,400</button>
+                <button type="button" data-amt="2600">2,600</button>
+                <button type="button" data-amt="300">300</button>
+              </div>
+              <div class="atm__out mono" id="atmOut" aria-live="polite"></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case 3: ERPNext -->
+        <article class="case reveal">
+          <div class="case__meta">
+            <span class="case__num mono">03 / 04</span>
+            <span class="case__kicker">STH Company · Implementation lead</span>
+            <h3>ERPNext implementation</h3>
+            <p>
+              Implemented and customised the HR, Buying, Stock, Selling and Assets modules, aligning configuration
+              with real business workflows to cut manual work for end users. Grew into a coordinating role —
+              guiding teammates through implementation and customisation of these modules.
+            </p>
+            <ul class="tags">
+              <li>ERPNext</li><li>Business analysis</li><li>Workflow design</li><li>Team coordination</li>
+            </ul>
+          </div>
+          <div class="case__visual" aria-hidden="true">
+            <div class="flow">
+              <div class="flow__step"><span>01</span>Map real workflow</div>
+              <div class="flow__step"><span>02</span>Configure modules</div>
+              <div class="flow__step"><span>03</span>Customise &amp; automate</div>
+              <div class="flow__step"><span>04</span>Guide the team</div>
+              <div class="flow__mods">
+                <i>HR</i><i>Buying</i><i>Stock</i><i>Selling</i><i>Assets</i>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case 4: AI agents -->
+        <article class="case case--flip reveal">
+          <div class="case__meta">
+            <span class="case__num mono">04 / 04</span>
+            <span class="case__kicker">Hands-on training · AI engineering</span>
+            <h3>AI agents &amp; RAG</h3>
+            <p>
+              Built AI agents from scratch: a conversational <em>Document Q&amp;A agent</em> grounded in PDFs through
+              Pinecone vector search, multi-agent LangGraph workflows that call external tools over MCP, and
+              local LLM integration through Ollama for private, offline inference.
+            </p>
+            <ul class="tags">
+              <li>LangChain</li><li>LangGraph</li><li>Pinecone</li><li>Ollama</li><li>MCP</li><li>OpenAI API</li>
+            </ul>
+          </div>
+          <div class="case__visual" aria-hidden="true">
+            <div class="term">
+              <div class="term__bar"><i></i><i></i><i></i><span class="mono">agent.run()</span></div>
+              <ol class="term__body mono" id="term">
+                <li><span class="p">$</span> ask "What is the leasing policy?"</li>
+                <li class="t" style="--d:0"><span class="ok">✓</span> embed query</li>
+                <li class="t" style="--d:1"><span class="ok">✓</span> pinecone.search → 4 chunks</li>
+                <li class="t" style="--d:2"><span class="ok">✓</span> planner → tool: pdf_reader (MCP)</li>
+                <li class="t" style="--d:3"><span class="ok">✓</span> ground answer in sources</li>
+                <li class="t" style="--d:4"><span class="dot">●</span> answer ready <span class="dim">[p.12, p.14]</span></li>
+              </ol>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section section--tint" id="about">
+      <div class="wrap about">
+        <header class="section__head reveal">
+          <span class="eyebrow">(02) About</span>
+          <h2>Business logic, <em>made usable.</em></h2>
+        </header>
+        <div class="about__body">
+          <p class="about__lead reveal">
+            I'm a Frontend Engineer and Co-Founder of Acugnito ERP, with a B.Sc. in Information Technology Engineering
+            specialising in Software Development and Information Systems.
+          </p>
+          <p class="reveal">
+            Most of my work sits where business meets software: understanding how a company actually runs —
+            approvals, payroll, stock, leases, permissions — and expressing those rules in interfaces people can
+            trust. I designed the logic behind six ERP modules and built their frontend end to end.
+          </p>
+          <p class="reveal">
+            Beyond the browser, I've implemented ERPNext for real businesses, written .NET software that talks to
+            ATM hardware, and built AI agents with LangGraph and RAG. I care about clean, reusable component
+            architecture and close collaboration with backend teams.
+          </p>
+          <ol class="process reveal" aria-label="How I work">
+            <li>Understand</li><li>Model the rules</li><li>Design</li><li>Build</li><li>Validate</li><li>Deliver</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <span class="eyebrow">(03) Experience</span>
+          <h2>Where I've worked.</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="job reveal">
+            <div class="job__when mono">Oct 2024 — Present</div>
+            <div class="job__what">
+              <h3>Co-Founder &amp; Frontend Engineer</h3>
+              <p class="job__org">Acugnito ERP <span>· Enterprise Resource Planning platform</span></p>
+              <p>Designed the business logic for HRM, Financials, Inventory, Customer Service, Service Management and Leasing. Built the complete React.js frontend, integrated backend APIs via Swagger, and embedded validation and role-based workflows. Delivered responsive Material-UI interfaces now used in production by five clients.</p>
+              <ul class="tags tags--quiet"><li>React.js</li><li>Material-UI</li><li>REST</li><li>Swagger</li></ul>
+            </div>
+          </li>
+          <li class="job reveal">
+            <div class="job__when mono">Jun 2025 — Present</div>
+            <div class="job__what">
+              <h3>Software Engineer</h3>
+              <p class="job__org">STH Company <span>· Full-time</span></p>
+              <p>Started as a React.js frontend engineer, then moved to ERPNext — implementing and customising HR, Buying, Stock, Selling and Assets, and later coordinating the team on these modules. Built a .NET ATM application on CEN/XFS with a greedy + backtracking cash-dispensing algorithm, integrated with the hardware-communication layer.</p>
+              <ul class="tags tags--quiet"><li>React.js</li><li>ERPNext</li><li>.NET</li><li>CEN/XFS</li></ul>
+            </div>
+          </li>
+          <li class="job reveal">
+            <div class="job__when mono">Jul 2026 — Oct 2026</div>
+            <div class="job__what">
+              <h3>Frontend Engineer (Next.js)</h3>
+              <p class="job__org">Freelance <span>· Part-time · Fintech web platform</span></p>
+              <p>Took over maintenance of a fintech web platform's frontend after the original team left. Worked within the existing Next.js and React codebase, delivering bug fixes, enhancements and feature changes while keeping the platform stable.</p>
+              <ul class="tags tags--quiet"><li>Next.js</li><li>React</li><li>Fintech</li></ul>
+            </div>
+          </li>
+          <li class="job job--edu reveal">
+            <div class="job__when mono">2021 — 2026</div>
+            <div class="job__what">
+              <h3>B.Sc. Information Technology Engineering</h3>
+              <p class="job__org">Al-Ittihad Private University <span>· Graduated 2026</span></p>
+              <p>Specialisation in Software Development and Information Systems.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section--tint" id="skills">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <span class="eyebrow">(04) Skills</span>
+          <h2>The toolkit.</h2>
+          <p class="section__sub">Technologies I use day to day, and the kind of problems I'm good at.</p>
+        </header>
+
+        <div class="skills">
+          <div class="skill-card reveal">
+            <h3><span class="skill-card__ico">◧</span>Frontend</h3>
+            <ul class="tags"><li>React.js</li><li>Next.js</li><li>JavaScript ES6+</li><li>HTML5</li><li>CSS3</li><li>Material-UI</li><li>Responsive design</li><li>Data visualisation</li></ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3><span class="skill-card__ico">⇄</span>State &amp; data</h3>
+            <ul class="tags"><li>Redux</li><li>TanStack Query</li><li>REST APIs</li><li>Swagger / OpenAPI</li></ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3><span class="skill-card__ico">▦</span>Enterprise platforms</h3>
+            <ul class="tags"><li>ERPNext</li><li>HR · Buying · Stock</li><li>Selling · Assets</li><li>Workiom (no-code)</li></ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3><span class="skill-card__ico">✦</span>AI &amp; LLM</h3>
+            <ul class="tags"><li>LangChain</li><li>LangGraph</li><li>OpenAI API</li><li>Ollama</li><li>Pinecone</li><li>RAG</li><li>MCP</li></ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3><span class="skill-card__ico">⌗</span>Desktop &amp; banking</h3>
+            <ul class="tags"><li>C# / .NET</li><li>CEN/XFS</li><li>ATM applications</li><li>Hardware integration</li></ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3><span class="skill-card__ico">⚙</span>Tools</h3>
+            <ul class="tags"><li>Git</li><li>npm</li><li>Webpack</li><li>Node.js</li><li>Chrome DevTools</li></ul>
+          </div>
+        </div>
+
+        <div class="strengths reveal">
+          <div><h4>Frontend architecture</h4><p>Component-based design, reusable components, scalable structure.</p></div>
+          <div><h4>Business logic</h4><p>ERP &amp; fintech workflows, role-based access, complex forms and validation.</p></div>
+          <div><h4>Algorithms</h4><p>Greedy strategies, backtracking, optimisation problems.</p></div>
+          <div><h4>Practices</h4><p>Agile development, clean code, cross-team API collaboration.</p></div>
+        </div>
+
+        <div class="langs reveal">
+          <span class="eyebrow eyebrow--plain">Languages</span>
+          <div class="lang"><b>Arabic</b><span class="meter"><i style="--v:100%"></i></span><small>Native</small></div>
+          <div class="lang"><b>English</b><span class="meter"><i style="--v:62%"></i></span><small>Intermediate</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <span class="eyebrow">(05) Contact</span>
+          <h2 class="contact__title">Let's build something <em>reliable</em> together.</h2>
+          <p class="section__sub">Open to frontend, ERP and product engineering roles — remote or on-site.</p>
+        </header>
+
+        <div class="contact__mail reveal">
+          <a href="mailto:amermshrshar@gmail.com" class="mail">amermshrshar@gmail.com</a>
+          <button class="btn btn--ghost btn--small" id="copyMail" data-copy="amermshrshar@gmail.com">Copy</button>
+        </div>
+
+        <div class="contact__grid reveal">
+          <a class="contact__item" href="https://linkedin.com/in/amer-shrshar" target="_blank" rel="noopener">
+            <small>LinkedIn</small><span>in/amer-shrshar ↗</span>
+          </a>
+          <a class="contact__item" href="https://acugnito.com" target="_blank" rel="noopener">
+            <small>Company</small><span>acugnito.com ↗</span>
+          </a>
+          <a class="contact__item" href="tel:+963962823011">
+            <small>Phone</small><span>+963 962 823 011</span>
+          </a>
+          <a class="contact__item" href="assets/Amer-Shrshar-CV.pdf" download>
+            <small>Résumé</small><span>Download PDF ↓</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span>© <span id="year">2026</span> Amer Shrshar · Damascus, Syria</span>
+      <a href="#top" class="link-arrow">Back to top <span>↑</span></a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js?v=3" defer></script>
+</body>
+</html>

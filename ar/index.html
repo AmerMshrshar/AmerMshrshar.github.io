@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>عامر شرشار — مهندس واجهات أمامية</title>
+  <meta name="description" content="عامر شرشار — مهندس واجهات أمامية وشريك مؤسس في Acugnito ERP. خبرة في React.js وNext.js وERPNext وأنظمة .NET المصرفية. دمشق، سوريا." />
+  <meta name="theme-color" content="#F3EFE6" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0D1618" media="(prefers-color-scheme: dark)" />
+  <meta property="og:title" content="عامر شرشار — مهندس واجهات أمامية" />
+  <meta property="og:description" content="أحوّل قواعد الأعمال المعقدة إلى واجهات واضحة وموثوقة." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ar_SY" />
+  <link rel="alternate" hreflang="en" href="https://amermshrshar.github.io/" />
+  <link rel="alternate" hreflang="ar" href="https://amermshrshar.github.io/ar/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231E4D57'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='30' fill='%23E9D8B4'%3EA%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400..600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css?v=4" />
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">انتقل إلى المحتوى</a>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a href="#home" class="brand" aria-label="عامر شرشار — الرئيسية">
+        <span class="brand__mark">ع<em>ش</em></span>
+        <span class="brand__text">عامر شرشار</span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="القائمة الرئيسية">
+        <a href="#work">الأعمال</a>
+        <a href="#about">نبذة</a>
+        <a href="#experience">الخبرات</a>
+        <a href="#skills">المهارات</a>
+        <a href="#contact">تواصل</a>
+      </nav>
+      <div class="nav__actions">
+        <a class="lang-switch" href="../" hreflang="en" lang="en" title="English version">EN</a>
+        <button class="icon-btn" id="themeToggle" aria-label="تبديل المظهر">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+        </button>
+        <a class="btn btn--small btn--ghost hide-sm" href="../assets/Amer-Shrshar-CV.pdf" download>السيرة الذاتية <span aria-hidden="true">↓</span></a>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="فتح القائمة" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="status reveal">
+            <span class="status__dot"></span> متاح لفرص في هندسة الواجهات الأمامية وتطوير المنتجات
+            <span class="status__sep">·</span> دمشق
+            <span class="status__sep">·</span> <span id="clock">--:--</span>
+          </p>
+
+          <h1 class="hero__title reveal">
+            عامر شرشار<span class="accent">.</span>
+          </h1>
+          <p class="hero__role reveal">
+            <span class="muted">أعمل</span>
+            <span class="rotator" aria-live="polite">
+              <span class="rotator__item is-active">مهندسَ واجهات أمامية</span>
+              <span class="rotator__item">شريكاً مؤسساً في Acugnito</span>
+              <span class="rotator__item">مهندسَ برمجيات</span>
+            </span>
+          </p>
+
+          <p class="hero__lede reveal">
+            أحوّل <em>قواعد الأعمال المعقدة</em> إلى واجهات واضحة وموثوقة —
+            من منصة ERP تعمل في بيئة الإنتاج مبنية بـ React.js، إلى برمجيات <bdi>.NET</bdi> تشغّل أجهزة الصراف الآلي في البنوك.
+          </p>
+
+          <div class="hero__cta reveal">
+            <a class="btn btn--primary" href="#work">استعرض أعمالي <span aria-hidden="true">←</span></a>
+            <a class="btn btn--ghost" href="../assets/Amer-Shrshar-CV.pdf" download>تحميل السيرة الذاتية <small class="muted">(EN)</small></a>
+          </div>
+
+          <dl class="stats reveal">
+            <div class="stat"><dt>عملاء في بيئة الإنتاج</dt><dd><span data-count="5">0</span></dd></div>
+            <div class="stat"><dt>وحدات ERP صمّمتُها</dt><dd><span data-count="6">0</span></dd></div>
+            <div class="stat"><dt>وحدات ERPNext طبّقتُها</dt><dd><span data-count="5">0</span></dd></div>
+            <div class="stat"><dt>سنوات من الإنجاز</dt><dd><span data-count="2">0</span>+</dd></div>
+          </dl>
+        </div>
+
+        <!-- Interface sketch -->
+        <div class="hero__visual reveal" aria-hidden="true">
+          <div class="mock">
+            <div class="mock__bar">
+              <i></i><i></i><i></i>
+              <span class="mock__url mono" dir="ltr">erp.acugnito.com / dashboard</span>
+            </div>
+            <div class="mock__body">
+              <aside class="mock__side">
+                <span class="mock__logo">Acugnito</span>
+                <span class="is-on">الموارد البشرية</span>
+                <span>المالية</span>
+                <span>المخزون</span>
+                <span>خدمة العملاء</span>
+                <span>إدارة الخدمات</span>
+                <span>التأجير</span>
+              </aside>
+              <div class="mock__main">
+                <div class="mock__kpis">
+                  <div><small>الموظفون</small><b>248</b><em class="up" dir="ltr">+4.2%</em></div>
+                  <div><small>الرواتب</small><b>98%</b><em class="up">في الموعد</em></div>
+                  <div><small>الطلبات</small><b>31</b><em>قيد الانتظار</em></div>
+                </div>
+                <div class="mock__chart">
+                  <svg viewBox="0 0 300 110" preserveAspectRatio="none">
+                    <defs>
+                      <linearGradient id="g1" x1="0" x2="0" y1="0" y2="1">
+                        <stop offset="0" stop-color="currentColor" stop-opacity=".28"/>
+                        <stop offset="1" stop-color="currentColor" stop-opacity="0"/>
+                      </linearGradient>
+                    </defs>
+                    <path class="mock__area" d="M0,80 C30,70 45,74 70,60 C95,46 110,58 140,44 C170,30 185,40 210,28 C235,18 260,26 300,12 L300,110 L0,110 Z" fill="url(#g1)"/>
+                    <path class="mock__line" d="M0,80 C30,70 45,74 70,60 C95,46 110,58 140,44 C170,30 185,40 210,28 C235,18 260,26 300,12" fill="none" stroke="currentColor" stroke-width="2.2"/>
+                  </svg>
+                </div>
+                <div class="mock__rows">
+                  <div><span class="pill pill--ok">معتمد</span><i style="--w:72%"></i></div>
+                  <div><span class="pill pill--wait">قيد المراجعة</span><i style="--w:54%"></i></div>
+                  <div><span class="pill pill--ok">معتمد</span><i style="--w:81%"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="float-chip float-chip--a" dir="ltr"><span class="mono">role</span> = "admin" ✓</div>
+          <div class="float-chip float-chip--b">6 وحدات · تعمل في بيئة الإنتاج</div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#work" aria-label="انتقل إلى الأعمال"><span></span>مرّر</a>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section" id="work">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <span class="eyebrow">(01) أعمال مختارة</span>
+          <h2>ما بنيتُه وأطلقتُه.</h2>
+          <p class="section__sub">أنظمة حقيقية تستخدمها شركات حقيقية — كلٌّ منها مجموعة من قواعد العمل أصبحت سهلة الاستخدام.</p>
+        </header>
+
+        <!-- Case 1: Acugnito -->
+        <article class="case reveal">
+          <div class="case__meta">
+            <span class="case__num mono">01 / 04</span>
+            <span class="case__kicker">شريك مؤسس · المنتج والواجهات الأمامية</span>
+            <h3>Acugnito ERP</h3>
+            <p>
+              شاركتُ في تأسيس منصة لتخطيط موارد المؤسسات (ERP)، وصمّمتُ منطق الأعمال عبر ست وحدات: الموارد البشرية،
+              والمالية، والمخزون، وخدمة العملاء، وإدارة الخدمات، والتأجير. وبنيتُ البنية الكاملة للواجهة الأمامية
+              بـ React.js، مع دمج قواعد التحقق وسير العمل المبني على الصلاحيات مباشرةً في الواجهة.
+            </p>
+            <ul class="case__facts">
+              <li><b>5</b> عملاء في بيئة الإنتاج</li>
+              <li><b>6</b> وحدات متكاملة</li>
+              <li><b>100%</b> من الواجهة الأمامية</li>
+            </ul>
+            <ul class="tags">
+              <li>React.js</li><li>Material-UI</li><li>REST APIs</li><li>Swagger</li><li>إدارة الصلاحيات</li>
+            </ul>
+            <div class="case__links">
+              <a class="link-arrow" href="https://erp.demo.acugnito.com/sign-in" target="_blank" rel="noopener">افتح العرض التجريبي <span>↗</span></a>
+              <span class="hint">بيانات الدخول: <bdi class="mono" dir="ltr">admin / admin</bdi></span>
+            </div>
+          </div>
+          <div class="case__visual case__visual--modules" aria-hidden="true">
+            <div class="orbit">
+              <div class="orbit__core"><span>Acugnito</span><small>نواة ERP</small></div>
+              <span class="orbit__node" style="--a:0deg">الموارد<br/>البشرية</span>
+              <span class="orbit__node" style="--a:60deg">المالية</span>
+              <span class="orbit__node" style="--a:120deg">المخزون</span>
+              <span class="orbit__node" style="--a:180deg">خدمة<br/>العملاء</span>
+              <span class="orbit__node" style="--a:240deg">إدارة<br/>الخدمات</span>
+              <span class="orbit__node" style="--a:300deg">التأجير</span>
+              <svg class="orbit__ring" viewBox="0 0 200 200"><circle cx="100" cy="100" r="78"/><circle cx="100" cy="100" r="50"/></svg>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case 2: ATM -->
+        <article class="case case--flip reveal">
+          <div class="case__meta">
+            <span class="case__num mono">02 / 04</span>
+            <span class="case__kicker">STH Company · الأنظمة المصرفية</span>
+            <h3>محرّك صرف النقد للصراف الآلي</h3>
+            <p>
+              بنيتُ تطبيق سطح مكتب بتقنية <bdi>.NET</bdi> لأجهزة الصراف الآلي وفق معيار CEN/XFS. تجمع خوارزمية الصرف فيه بين
+              <em>الاستراتيجية الجشعة</em> و<em>التراجع (Backtracking)</em> لإيجاد تركيبة صحيحة ومثلى من الأوراق النقدية
+              مما تبقّى في الخزائن، ثم تمريرها إلى طبقة الاتصال بالعتاد التي تشغّل الجهاز.
+            </p>
+            <ul class="tags">
+              <li>C# / .NET</li><li>CEN/XFS</li><li>الخوارزميات</li><li>التكامل مع العتاد</li>
+            </ul>
+            <p class="hint">جرّبها — المحاكي يطبّق الفكرة نفسها هنا في متصفحك.</p>
+          </div>
+          <div class="case__visual">
+            <div class="atm" id="atm">
+              <div class="atm__head">
+                <span class="mono" dir="ltr">dispense --amount</span>
+                <span class="atm__badge">محاكاة</span>
+              </div>
+              <div class="atm__cassettes" id="cassettes"></div>
+              <form class="atm__form" id="atmForm" autocomplete="off">
+                <label for="amount" class="sr-only">المبلغ</label>
+                <input id="amount" inputmode="numeric" value="6600" dir="ltr" aria-describedby="atmOut" />
+                <button class="btn btn--primary btn--small" type="submit">اصرف</button>
+              </form>
+              <div class="atm__quick">
+                <button type="button" data-amt="6600">6,600</button>
+                <button type="button" data-amt="11400">11,400</button>
+                <button type="button" data-amt="2600">2,600</button>
+                <button type="button" data-amt="300">300</button>
+              </div>
+              <div class="atm__out" id="atmOut" aria-live="polite"></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case 3: ERPNext -->
+        <article class="case reveal">
+          <div class="case__meta">
+            <span class="case__num mono">03 / 04</span>
+            <span class="case__kicker">STH Company · قيادة التطبيق</span>
+            <h3>تطبيق نظام ERPNext</h3>
+            <p>
+              طبّقتُ وخصّصتُ وحدات الموارد البشرية، والمشتريات، والمخزون، والمبيعات، والأصول، وعملتُ على مواءمة
+              إعدادات النظام مع سير العمل الفعلي للحدّ من العمل اليدوي على المستخدمين. ثم تولّيتُ دوراً تنسيقياً
+              لتوجيه زملائي خلال تطبيق هذه الوحدات وتخصيصها.
+            </p>
+            <ul class="tags">
+              <li>ERPNext</li><li>تحليل الأعمال</li><li>تصميم سير العمل</li><li>تنسيق الفريق</li>
+            </ul>
+          </div>
+          <div class="case__visual" aria-hidden="true">
+            <div class="flow">
+              <div class="flow__step"><span>01</span>فهم سير العمل الفعلي</div>
+              <div class="flow__step"><span>02</span>إعداد الوحدات</div>
+              <div class="flow__step"><span>03</span>التخصيص والأتمتة</div>
+              <div class="flow__step"><span>04</span>توجيه الفريق</div>
+              <div class="flow__mods">
+                <i>الموارد البشرية</i><i>المشتريات</i><i>المخزون</i><i>المبيعات</i><i>الأصول</i>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case 4: AI agents -->
+        <article class="case case--flip reveal">
+          <div class="case__meta">
+            <span class="case__num mono">04 / 04</span>
+            <span class="case__kicker">تدريب عملي · هندسة الذكاء الاصطناعي</span>
+            <h3>وكلاء الذكاء الاصطناعي وRAG</h3>
+            <p>
+              بنيتُ وكلاء ذكاء اصطناعي من الصفر: <em>وكيل أسئلة وأجوبة للمستندات</em> يستند إلى ملفات PDF عبر البحث
+              المتّجهي في Pinecone، وسير عمل متعدد الوكلاء باستخدام LangGraph يستدعي أدوات خارجية عبر بروتوكول MCP،
+              ودمج نماذج لغوية محلية عبر Ollama لاستدلال خاص يعمل دون اتصال بالإنترنت.
+            </p>
+            <ul class="tags">
+              <li>LangChain</li><li>LangGraph</li><li>Pinecone</li><li>Ollama</li><li>MCP</li><li>OpenAI API</li>
+            </ul>
+          </div>
+          <div class="case__visual" aria-hidden="true">
+            <div class="term" dir="ltr">
+              <div class="term__bar"><i></i><i></i><i></i><span class="mono">agent.run()</span></div>
+              <ol class="term__body mono" id="term">
+                <li><span class="p">$</span> ask "<bdi dir="rtl">ما سياسة التأجير؟</bdi>"</li>
+                <li class="t" style="--d:0"><span class="ok">✓</span> embed query</li>
+                <li class="t" style="--d:1"><span class="ok">✓</span> pinecone.search → 4 chunks</li>
+                <li class="t" style="--d:2"><span class="ok">✓</span> planner → tool: pdf_reader (MCP)</li>
+                <li class="t" style="--d:3"><span class="ok">✓</span> ground answer in sources</li>
+                <li class="t" style="--d:4"><span class="dot">●</span> answer ready <span class="dim">[p.12, p.14]</span></li>
+              </ol>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section section--tint" id="about">
+      <div class="wrap about">
+        <header class="section__head reveal">
+          <span class="eyebrow">(02) نبذة</span>
+          <h2>منطق الأعمال، <em>في متناول المستخدم.</em></h2>
+        </header>
+        <div class="about__body">
+          <p class="about__lead reveal">
+            أنا مهندس واجهات أمامية وشريك مؤسس في Acugnito ERP، حاصل على بكالوريوس في هندسة تكنولوجيا المعلومات،
+            باختصاص تطوير البرمجيات ونظم المعلومات.
+          </p>
+          <p class="reveal">
+            يقع معظم عملي حيث تلتقي الأعمال بالبرمجيات: أفهم كيف تعمل الشركة فعلياً — الموافقات، والرواتب، والمخزون،
+            وعقود التأجير، والصلاحيات — ثم أصوغ تلك القواعد في واجهات يثق بها المستخدمون. صمّمتُ المنطق الذي تقوم عليه
+            ست وحدات ERP، وبنيتُ واجهاتها الأمامية بالكامل.
+          </p>
+          <p class="reveal">
+            وبعيداً عن المتصفح، طبّقتُ ERPNext لشركات فعلية، وكتبتُ برمجيات <bdi>.NET</bdi> تتخاطب مع عتاد أجهزة الصراف الآلي،
+            وبنيتُ وكلاء ذكاء اصطناعي باستخدام LangGraph وRAG. أهتم ببنية مكوّنات نظيفة وقابلة لإعادة الاستخدام،
+            وبالتعاون الوثيق مع فرق الواجهات الخلفية.
+          </p>
+          <ol class="process reveal" aria-label="منهجية عملي">
+            <li>الفهم</li><li>نمذجة القواعد</li><li>التصميم</li><li>البناء</li><li>التحقق</li><li>التسليم</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <span class="eyebrow">(03) الخبرات</span>
+          <h2>أين عملتُ.</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="job reveal">
+            <div class="job__when">أكتوبر 2024 — الآن</div>
+            <div class="job__what">
+              <h3>شريك مؤسس ومهندس واجهات أمامية</h3>
+              <p class="job__org">Acugnito ERP <span>· منصة لتخطيط موارد المؤسسات</span></p>
+              <p>صمّمتُ منطق الأعمال لوحدات الموارد البشرية، والمالية، والمخزون، وخدمة العملاء، وإدارة الخدمات، والتأجير. وبنيتُ الواجهة الأمامية كاملةً بـ React.js، ودمجتُ واجهات البرمجة الخلفية عبر توثيق Swagger، مع تضمين قواعد التحقق وسير العمل المبني على الصلاحيات. وقدّمتُ واجهات متجاوبة باستخدام Material-UI يستخدمها اليوم خمسة عملاء في بيئة الإنتاج.</p>
+              <ul class="tags tags--quiet"><li>React.js</li><li>Material-UI</li><li>REST</li><li>Swagger</li></ul>
+            </div>
+          </li>
+          <li class="job reveal">
+            <div class="job__when">يونيو 2025 — الآن</div>
+            <div class="job__what">
+              <h3>مهندس برمجيات</h3>
+              <p class="job__org">STH Company <span>· دوام كامل</span></p>
+              <p>بدأتُ مهندسَ واجهات أمامية بـ React.js، ثم انتقلتُ إلى ERPNext لتطبيق وتخصيص وحدات الموارد البشرية والمشتريات والمخزون والمبيعات والأصول، ولاحقاً تولّيتُ تنسيق عمل الفريق على هذه الوحدات. كما بنيتُ تطبيق صراف آلي بتقنية <bdi>.NET</bdi> وفق معيار CEN/XFS، مع خوارزمية صرف نقدي تجمع بين الاستراتيجية الجشعة والتراجع، ودمجتُه مع طبقة الاتصال بالعتاد.</p>
+              <ul class="tags tags--quiet"><li>React.js</li><li>ERPNext</li><li><bdi>.NET</bdi></li><li>CEN/XFS</li></ul>
+            </div>
+          </li>
+          <li class="job reveal">
+            <div class="job__when">يوليو 2026 — أكتوبر 2026</div>
+            <div class="job__what">
+              <h3>مهندس واجهات أمامية (Next.js)</h3>
+              <p class="job__org">عمل مستقل <span>· دوام جزئي · منصة ويب للتقنية المالية</span></p>
+              <p>تولّيتُ صيانة الواجهة الأمامية لمنصة ويب في مجال التقنية المالية بعد مغادرة الفريق الأصلي. وعملتُ ضمن قاعدة الشيفرة القائمة بـ Next.js وReact، فأنجزتُ إصلاحات الأخطاء والتحسينات وتعديلات الميزات المطلوبة مع الحفاظ على استقرار المنصة.</p>
+              <ul class="tags tags--quiet"><li>Next.js</li><li>React</li><li>التقنية المالية</li></ul>
+            </div>
+          </li>
+          <li class="job job--edu reveal">
+            <div class="job__when">2021 — 2026</div>
+            <div class="job__what">
+              <h3>بكالوريوس هندسة تكنولوجيا المعلومات</h3>
+              <p class="job__org">جامعة الاتحاد الخاصة <span>· تخرّج 2026</span></p>
+              <p>اختصاص تطوير البرمجيات ونظم المعلومات.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section--tint" id="skills">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <span class="eyebrow">(04) المهارات</span>
+          <h2>أدواتي.</h2>
+          <p class="section__sub">التقنيات التي أستخدمها يومياً، ونوع المشكلات التي أُجيد حلّها.</p>
+        </header>
+
+        <div class="skills">
+          <div class="skill-card reveal">
+            <h3><span class="skill-card__ico">◧</span>الواجهات الأمامية</h3>
+            <ul class="tags"><li>React.js</li><li>Next.js</li><li>JavaScript ES6+</li><li>HTML5</li><li>CSS3</li><li>Material-UI</li><li>التصميم المتجاوب</li><li>تصوير البيانات</li></ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3><span class="skill-card__ico">⇄</span>إدارة الحالة والبيانات</h3>
+            <ul class="tags"><li>Redux</li><li>TanStack Query</li><li>REST APIs</li><li>Swagger / OpenAPI</li></ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3><span class="skill-card__ico">▦</span>المنصات المؤسسية</h3>
+            <ul class="tags"><li>ERPNext</li><li>الموارد البشرية · المشتريات · المخزون</li><li>المبيعات · الأصول</li><li>Workiom (بدون كود)</li></ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3><span class="skill-card__ico">✦</span>الذكاء الاصطناعي والنماذج اللغوية</h3>
+            <ul class="tags"><li>LangChain</li><li>LangGraph</li><li>OpenAI API</li><li>Ollama</li><li>Pinecone</li><li>RAG</li><li>MCP</li></ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3><span class="skill-card__ico">⌗</span>سطح المكتب والأنظمة المصرفية</h3>
+            <ul class="tags"><li>C# / .NET</li><li>CEN/XFS</li><li>تطبيقات الصراف الآلي</li><li>التكامل مع العتاد</li></ul>
+          </div>
+          <div class="skill-card reveal">
+            <h3><span class="skill-card__ico">⚙</span>الأدوات</h3>
+            <ul class="tags"><li>Git</li><li>npm</li><li>Webpack</li><li>Node.js</li><li>Chrome DevTools</li></ul>
+          </div>
+        </div>
+
+        <div class="strengths reveal">
+          <div><h4>بنية الواجهات الأمامية</h4><p>تصميم قائم على المكوّنات، ومكوّنات قابلة لإعادة الاستخدام، وبنية قابلة للتوسّع.</p></div>
+          <div><h4>منطق الأعمال</h4><p>سير عمل ERP والتقنية المالية، والتحكم بالوصول حسب الأدوار، والنماذج المعقدة والتحقق منها.</p></div>
+          <div><h4>الخوارزميات</h4><p>الاستراتيجيات الجشعة، والتراجع، ومسائل التحسين.</p></div>
+          <div><h4>الممارسات</h4><p>التطوير الرشيق (Agile)، والشيفرة النظيفة، والتعاون مع الفرق عبر واجهات البرمجة.</p></div>
+        </div>
+
+        <div class="langs reveal">
+          <span class="eyebrow eyebrow--plain">اللغات</span>
+          <div class="lang"><b>العربية</b><span class="meter"><i style="--v:100%"></i></span><small>اللغة الأم</small></div>
+          <div class="lang"><b>الإنجليزية</b><span class="meter"><i style="--v:62%"></i></span><small>متوسط</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <span class="eyebrow">(05) تواصل</span>
+          <h2 class="contact__title">لنبنِ معاً شيئاً <em>موثوقاً</em>.</h2>
+          <p class="section__sub">متاح لفرص في الواجهات الأمامية وأنظمة ERP وهندسة المنتجات — عن بُعد أو حضورياً.</p>
+        </header>
+
+        <div class="contact__mail reveal">
+          <a href="mailto:amermshrshar@gmail.com" class="mail" dir="ltr">amermshrshar@gmail.com</a>
+          <button class="btn btn--ghost btn--small" id="copyMail" data-copy="amermshrshar@gmail.com">نسخ</button>
+        </div>
+
+        <div class="contact__grid reveal">
+          <a class="contact__item" href="https://linkedin.com/in/amer-shrshar" target="_blank" rel="noopener">
+            <small>LinkedIn</small><span dir="ltr">in/amer-shrshar ↗</span>
+          </a>
+          <a class="contact__item" href="https://acugnito.com" target="_blank" rel="noopener">
+            <small>الشركة</small><span dir="ltr">acugnito.com ↗</span>
+          </a>
+          <a class="contact__item" href="tel:+963962823011">
+            <small>الهاتف</small><span dir="ltr">+963 962 823 011</span>
+          </a>
+          <a class="contact__item" href="../assets/Amer-Shrshar-CV.pdf" download>
+            <small>السيرة الذاتية</small><span>تحميل PDF بالإنجليزية ↓</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span>© <span id="year">2026</span> عامر شرشار · دمشق، سوريا</span>
+      <a href="#top" class="link-arrow">العودة إلى الأعلى <span>↑</span></a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="../script.js?v=3" defer></script>
+</body>
+</html>
