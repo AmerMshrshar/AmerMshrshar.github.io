@@ -129,4 +129,32 @@
 
   $('#year').textContent = new Date().getFullYear();
 
+  /* ---------- Screenshot lightbox ---------- */
+  const lb = $('#lightbox');
+  if (lb && typeof lb.showModal === 'function') {
+    const shots = $$('.shot');
+    const img = $('#lightboxImg');
+    const cap = $('#lightboxCap');
+    let idx = 0;
+    const show = (i) => {
+      idx = (i + shots.length) % shots.length;
+      const s = shots[idx];
+      img.src = s.dataset.full;
+      img.alt = s.querySelector('img').alt;
+      cap.textContent = s.dataset.caption;
+    };
+    shots.forEach((s, i) => s.addEventListener('click', () => { show(i); lb.showModal(); }));
+    lb.addEventListener('click', (e) => {
+      const act = e.target.closest('[data-lb]')?.dataset.lb;
+      if (act === 'close' || e.target === lb) lb.close();
+      else if (act === 'prev') show(idx - 1);
+      else if (act === 'next') show(idx + 1);
+    });
+    lb.addEventListener('keydown', (e) => {
+      const back = AR ? 'ArrowRight' : 'ArrowLeft';
+      const fwd = AR ? 'ArrowLeft' : 'ArrowRight';
+      if (e.key === back) show(idx - 1);
+      if (e.key === fwd) show(idx + 1);
+    });
+  }
 })();

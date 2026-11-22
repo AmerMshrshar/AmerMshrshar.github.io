@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="styles.css?v=5" />
   <script>
     /* Apply saved theme before paint to avoid a flash */
     try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
@@ -151,7 +151,7 @@
         </header>
 
         <!-- Case 1: Acugnito -->
-        <article class="case reveal">
+        <article class="case case--feature reveal">
           <div class="case__meta">
             <span class="case__num mono">01 / 04</span>
             <span class="case__kicker">Co-Founder · Product &amp; Frontend</span>
@@ -174,16 +174,33 @@
               <span class="hint mono">login: admin / admin</span>
             </div>
           </div>
-          <div class="case__visual case__visual--modules" aria-hidden="true">
-            <div class="orbit">
-              <div class="orbit__core"><span>Acugnito</span><small>ERP core</small></div>
-              <span class="orbit__node" style="--a:0deg">HRM</span>
-              <span class="orbit__node" style="--a:60deg">Financials</span>
-              <span class="orbit__node" style="--a:120deg">Inventory</span>
-              <span class="orbit__node" style="--a:180deg">Customer<br/>Service</span>
-              <span class="orbit__node" style="--a:240deg">Service<br/>Mgmt</span>
-              <span class="orbit__node" style="--a:300deg">Leasing</span>
-              <svg class="orbit__ring" viewBox="0 0 200 200"><circle cx="100" cy="100" r="78"/><circle cx="100" cy="100" r="50"/></svg>
+          <div class="case__visual case__visual--shot">
+            <button type="button" class="shot" data-full="assets/acugnito/website.webp" data-caption="acugnito.com: the product website" aria-label="View larger: acugnito.com: the product website">
+              <span class="shot__bar" aria-hidden="true"><i></i><i></i><i></i><span class="mono">acugnito.com</span></span>
+              <img src="assets/acugnito/website-sm.webp" alt="Acugnito website home page" width="1000" height="625" loading="lazy" decoding="async" />
+            </button>
+          </div>
+          <div class="case__gallery">
+            <p class="case__gallery-label mono">Screens from the live product</p>
+            <div class="gallery">
+            <figure>
+              <button type="button" class="shot" data-full="assets/acugnito/sign-in.webp" data-caption="Sign in" aria-label="View larger: Sign in">
+                <img src="assets/acugnito/sign-in-sm.webp" alt="Sign-in page of the Acugnito ERP demo" width="1000" height="625" loading="lazy" decoding="async" />
+              </button>
+              <figcaption>Sign in</figcaption>
+            </figure>
+            <figure>
+              <button type="button" class="shot" data-full="assets/acugnito/general-ledger.webp" data-caption="General ledger" aria-label="View larger: General ledger">
+                <img src="assets/acugnito/general-ledger-sm.webp" alt="General ledger: ledger transaction list in Acugnito ERP" width="1000" height="695" loading="lazy" decoding="async" />
+              </button>
+              <figcaption>General ledger</figcaption>
+            </figure>
+            <figure>
+              <button type="button" class="shot" data-full="assets/acugnito/inventory.webp" data-caption="On-hand inventory" aria-label="View larger: On-hand inventory">
+                <img src="assets/acugnito/inventory-sm.webp" alt="Inventory management: on-hand inventory in Acugnito ERP" width="1000" height="695" loading="lazy" decoding="async" />
+              </button>
+              <figcaption>On-hand inventory</figcaption>
+            </figure>
             </div>
           </div>
         </article>
@@ -449,8 +466,18 @@
     </div>
   </footer>
 
+  <dialog class="lightbox" id="lightbox" aria-label="Screens from the live product">
+    <button type="button" class="lightbox__close icon-btn" data-lb="close" aria-label="Close">✕</button>
+    <button type="button" class="lightbox__nav lightbox__nav--prev icon-btn" data-lb="prev" aria-label="Previous image">‹</button>
+    <figure class="lightbox__fig">
+      <img id="lightboxImg" alt="" />
+      <figcaption id="lightboxCap"></figcaption>
+    </figure>
+    <button type="button" class="lightbox__nav lightbox__nav--next icon-btn" data-lb="next" aria-label="Next image">›</button>
+  </dialog>
+
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="script.js?v=3" defer></script>
+  <script src="script.js?v=4" defer></script>
 </body>
 </html>

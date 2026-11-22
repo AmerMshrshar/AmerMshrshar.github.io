@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400..600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../styles.css?v=4" />
+  <link rel="stylesheet" href="../styles.css?v=5" />
   <script>
     try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
   </script>
@@ -151,7 +151,7 @@
         </header>
 
         <!-- Case 1: Acugnito -->
-        <article class="case reveal">
+        <article class="case case--feature reveal">
           <div class="case__meta">
             <span class="case__num mono">01 / 04</span>
             <span class="case__kicker">شريك مؤسس · المنتج والواجهات الأمامية</span>
@@ -174,16 +174,33 @@
               <span class="hint">بيانات الدخول: <bdi class="mono" dir="ltr">admin / admin</bdi></span>
             </div>
           </div>
-          <div class="case__visual case__visual--modules" aria-hidden="true">
-            <div class="orbit">
-              <div class="orbit__core"><span>Acugnito</span><small>نواة ERP</small></div>
-              <span class="orbit__node" style="--a:0deg">الموارد<br/>البشرية</span>
-              <span class="orbit__node" style="--a:60deg">المالية</span>
-              <span class="orbit__node" style="--a:120deg">المخزون</span>
-              <span class="orbit__node" style="--a:180deg">خدمة<br/>العملاء</span>
-              <span class="orbit__node" style="--a:240deg">إدارة<br/>الخدمات</span>
-              <span class="orbit__node" style="--a:300deg">التأجير</span>
-              <svg class="orbit__ring" viewBox="0 0 200 200"><circle cx="100" cy="100" r="78"/><circle cx="100" cy="100" r="50"/></svg>
+          <div class="case__visual case__visual--shot">
+            <button type="button" class="shot" data-full="../assets/acugnito/website-ar.webp" data-caption="acugnito.com: موقع المنتج" aria-label="عرض أكبر: acugnito.com: موقع المنتج">
+              <span class="shot__bar" aria-hidden="true"><i></i><i></i><i></i><span class="mono">acugnito.com</span></span>
+              <img src="../assets/acugnito/website-ar-sm.webp" alt="الصفحة الرئيسية لموقع Acugnito" width="1000" height="625" loading="lazy" decoding="async" />
+            </button>
+          </div>
+          <div class="case__gallery">
+            <p class="case__gallery-label mono">لقطات من المنتج الفعلي</p>
+            <div class="gallery">
+            <figure>
+              <button type="button" class="shot" data-full="../assets/acugnito/sign-in.webp" data-caption="تسجيل الدخول" aria-label="عرض أكبر: تسجيل الدخول">
+                <img src="../assets/acugnito/sign-in-sm.webp" alt="صفحة تسجيل الدخول في النسخة التجريبية من Acugnito ERP" width="1000" height="625" loading="lazy" decoding="async" />
+              </button>
+              <figcaption>تسجيل الدخول</figcaption>
+            </figure>
+            <figure>
+              <button type="button" class="shot" data-full="../assets/acugnito/general-ledger.webp" data-caption="دفتر الأستاذ العام" aria-label="عرض أكبر: دفتر الأستاذ العام">
+                <img src="../assets/acugnito/general-ledger-sm.webp" alt="دفتر الأستاذ العام: قائمة القيود في Acugnito ERP" width="1000" height="695" loading="lazy" decoding="async" />
+              </button>
+              <figcaption>دفتر الأستاذ العام</figcaption>
+            </figure>
+            <figure>
+              <button type="button" class="shot" data-full="../assets/acugnito/inventory.webp" data-caption="المخزون المتوفر" aria-label="عرض أكبر: المخزون المتوفر">
+                <img src="../assets/acugnito/inventory-sm.webp" alt="إدارة المخزون: المخزون المتوفر في Acugnito ERP" width="1000" height="695" loading="lazy" decoding="async" />
+              </button>
+              <figcaption>المخزون المتوفر</figcaption>
+            </figure>
             </div>
           </div>
         </article>
@@ -449,8 +466,18 @@
     </div>
   </footer>
 
+  <dialog class="lightbox" id="lightbox" aria-label="لقطات من المنتج الفعلي">
+    <button type="button" class="lightbox__close icon-btn" data-lb="close" aria-label="إغلاق">✕</button>
+    <button type="button" class="lightbox__nav lightbox__nav--prev icon-btn" data-lb="prev" aria-label="الصورة السابقة">‹</button>
+    <figure class="lightbox__fig">
+      <img id="lightboxImg" alt="" />
+      <figcaption id="lightboxCap"></figcaption>
+    </figure>
+    <button type="button" class="lightbox__nav lightbox__nav--next icon-btn" data-lb="next" aria-label="الصورة التالية">›</button>
+  </dialog>
+
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="../script.js?v=3" defer></script>
+  <script src="../script.js?v=4" defer></script>
 </body>
 </html>
