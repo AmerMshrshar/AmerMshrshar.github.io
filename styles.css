@@ -351,30 +351,17 @@ em { font-style: italic; }
 }
 .orbit__node:hover { background: var(--accent); color: var(--surface); border-color: var(--accent); }
 
-/* ATM simulator */
-.atm { width: 100%; max-width: 420px; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 20px; box-shadow: var(--shadow); }
-.atm__head { display: flex; justify-content: space-between; align-items: center; font-size: .8rem; color: var(--muted); margin-bottom: 16px; }
-.atm__badge { font-size: .66rem; letter-spacing: .1em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-weight: 600; }
-.atm__cassettes { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 16px; }
-.cass { border: 1px solid var(--line); border-radius: 10px; padding: 9px 6px 8px; text-align: center; background: var(--surface-2); transition: border-color .3s, background-color .3s; }
-.cass b { display: block; font: 500 1rem/1.2 var(--serif); }
-.cass small { font-size: .66rem; color: var(--muted); }
-.cass .bar { height: 4px; margin-top: 7px; border-radius: 2px; background: var(--line); overflow: hidden; }
-.cass .bar i { display: block; height: 100%; background: var(--sage); transition: width .5s var(--ease); }
-.cass.is-used { border-color: var(--primary); background: color-mix(in srgb, var(--primary) 8%, var(--surface)); }
-.cass .take { display: block; font-size: .7rem; color: var(--primary); font-weight: 600; min-height: 1.1em; margin-top: 3px; }
-.atm__form { display: flex; gap: 8px; }
-.atm__form input {
-  flex: 1; min-width: 0; height: 38px; padding: 0 14px; border-radius: 999px;
-  border: 1px solid var(--line-strong); background: var(--surface-2); color: var(--ink);
-  font: 500 .95rem var(--mono);
-}
-.atm__form input:focus { outline: none; border-color: var(--primary); }
-.atm__quick { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
-.atm__quick button { font: .74rem var(--mono); padding: 4px 10px; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--muted); transition: color .2s, border-color .2s; }
-.atm__quick button:hover { color: var(--ink); border-color: var(--line-strong); }
-.atm__out { margin-top: 14px; padding: 12px 14px; border-radius: 10px; background: var(--surface-2); border: 1px dashed var(--line-strong); font-size: .76rem; line-height: 1.7; min-height: 92px; color: var(--ink-2); }
-.atm__out .ok { color: var(--ok); } .atm__out .warn { color: var(--accent); } .atm__out .err { color: #B5584A; }
+/* ATM system diagram */
+.sys { width: 100%; max-width: 400px; display: flex; flex-direction: column; }
+.sys__node { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; box-shadow: var(--shadow); }
+.sys__node--web { border-color: color-mix(in srgb, var(--primary) 40%, var(--line)); }
+.sys__label { display: block; font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: var(--primary); margin-bottom: 6px; }
+.sys__node h4 { font: 500 1.1rem var(--serif); color: var(--ink); margin: 0 0 10px; }
+.sys__chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.sys__chips i { font-style: normal; font-size: .76rem; padding: 4px 10px; border-radius: 7px; background: var(--sage-soft); color: var(--ink-2); }
+.sys__link { position: relative; display: flex; justify-content: center; padding: 20px 0; }
+.sys__link::before { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; border-left: 1px dashed var(--line-strong); }
+.sys__link span { position: relative; font-size: .72rem; color: var(--muted); background: var(--surface-2); border: 1px solid var(--line); border-radius: 999px; padding: 3px 12px; }
 
 /* Flow (ERPNext) */
 .flow { width: 100%; max-width: 380px; display: flex; flex-direction: column; gap: 10px; position: relative; }
@@ -534,7 +521,7 @@ em { font-style: italic; }
 }
 
 @media print {
-  .nav, .progress, .scroll-cue, .hero__visual, .toast, .atm__form, .atm__quick { display: none !important; }
+  .nav, .progress, .scroll-cue, .hero__visual, .toast { display: none !important; }
   .reveal { opacity: 1 !important; transform: none !important; }
   .section { padding: 40px 0; }
 }
@@ -568,7 +555,6 @@ em { font-style: italic; }
 [dir="rtl"] .rotator { font-weight: 700; }
 [dir="rtl"] .eyebrow, [dir="rtl"] .contact__item small, [dir="rtl"] .job__when { font-family: var(--sans); text-transform: none; }
 [dir="rtl"] .eyebrow { font-size: .9rem; }
-[dir="rtl"] .atm__out { font-family: var(--sans); font-size: .82rem; }
 [dir="rtl"] .brand__mark { font-size: 17px; font-weight: 700; padding-bottom: 3px; }
 
 /* Mirror directional details */
@@ -613,7 +599,7 @@ em { font-style: italic; }
 }
 [dir="rtl"] .contact__item span[dir="ltr"] { text-align: right; }
 /* Let each tag / counter pick its own direction from its first letter */
-[dir="rtl"] .tags li, [dir="rtl"] .case__num, [dir="rtl"] .atm__quick button { unicode-bidi: plaintext; }
+[dir="rtl"] .tags li, [dir="rtl"] .case__num { unicode-bidi: plaintext; }
 [dir="rtl"] .brand__mark em { color: var(--accent); }
 :root[data-theme="dark"][dir="rtl"] .brand__mark em { color: #6b4a1f; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"])[dir="rtl"] .brand__mark em { color: #6b4a1f; } }

@@ -153,7 +153,7 @@
         <!-- Case 1: Acugnito -->
         <article class="case reveal">
           <div class="case__meta">
-            <span class="case__num mono">01 / 05</span>
+            <span class="case__num mono">01 / 04</span>
             <span class="case__kicker">شريك مؤسس · المنتج والواجهات الأمامية</span>
             <h3>Acugnito ERP</h3>
             <p>
@@ -188,81 +188,50 @@
           </div>
         </article>
 
-        <!-- Case 2: ATM -->
+        <!-- Case 2: ATM system -->
         <article class="case case--flip reveal">
           <div class="case__meta">
-            <span class="case__num mono">02 / 05</span>
-            <span class="case__kicker">STH Company · الأنظمة المصرفية</span>
-            <h3>محرّك صرف النقد للصراف الآلي</h3>
+            <span class="case__num mono">02 / 04</span>
+            <span class="case__kicker">STH Company · الأنظمة المصرفية · تطوير متكامل</span>
+            <h3>نظام الصرّافات الآلية: تطبيق الجهاز ومنصة الإدارة</h3>
             <p>
-              بنيتُ تطبيق سطح مكتب بتقنية <bdi>.NET</bdi> لأجهزة الصراف الآلي وفق معيار CEN/XFS. تجمع خوارزمية الصرف فيه بين
-              <em>الاستراتيجية الجشعة</em> و<em>التراجع (Backtracking)</em> لإيجاد تركيبة صحيحة ومثلى من الأوراق النقدية
-              مما تبقّى في الخزائن، ثم تمريرها إلى طبقة الاتصال بالعتاد التي تشغّل الجهاز.
+              بنيتُ جانبَي نظام الصرّافات الآلية لمصرف. على الأجهزة، يشغّل العتادَ تطبيقُ سطح مكتب بتقنية <bdi>.NET</bdi> وفق معيار CEN/XFS،
+              وتجمع خوارزمية الصرف فيه بين <em>الاستراتيجية الجشعة</em> و<em>التراجع (Backtracking)</em> لإيجاد تركيبة صحيحة ومثلى
+              من الأوراق النقدية مما تبقّى في الخزائن.
+            </p>
+            <p>
+              وحوله بنيتُ المنصة الإلكترونية التي يدير بها المصرف شبكة صرّافاته، بواجهتيها الأمامية والخلفية: حالة الأجهزة والنقد فيها،
+              و<em>تغذية الصرّافات بالنقد</em> من إسناد المهمة إلى موظف حتى تأكيد الصرّاف للتعبئة، و<em>سير عمل للموافقات</em> على التغييرات الحساسة،
+              والصلاحيات حسب الأدوار. ويرتبط الطرفان عبر مفاتيح خاصة بكل جهاز.
             </p>
             <ul class="tags">
-              <li>C# / .NET</li><li>CEN/XFS</li><li>الخوارزميات</li><li>التكامل مع العتاد</li>
-            </ul>
-            <p class="hint">جرّبها — المحاكي يطبّق الفكرة نفسها هنا في متصفحك.</p>
-          </div>
-          <div class="case__visual">
-            <div class="atm" id="atm">
-              <div class="atm__head">
-                <span class="mono" dir="ltr">dispense --amount</span>
-                <span class="atm__badge">محاكاة</span>
-              </div>
-              <div class="atm__cassettes" id="cassettes"></div>
-              <form class="atm__form" id="atmForm" autocomplete="off">
-                <label for="amount" class="sr-only">المبلغ</label>
-                <input id="amount" inputmode="numeric" value="6600" dir="ltr" aria-describedby="atmOut" />
-                <button class="btn btn--primary btn--small" type="submit">اصرف</button>
-              </form>
-              <div class="atm__quick">
-                <button type="button" data-amt="6600">6,600</button>
-                <button type="button" data-amt="11400">11,400</button>
-                <button type="button" data-amt="2600">2,600</button>
-                <button type="button" data-amt="300">300</button>
-              </div>
-              <div class="atm__out" id="atmOut" aria-live="polite"></div>
-            </div>
-          </div>
-        </article>
-
-        <!-- Case 3: ATM management platform -->
-        <article class="case reveal">
-          <div class="case__meta">
-            <span class="case__num mono">03 / 05</span>
-            <span class="case__kicker">STH Company · تطوير متكامل (Full-stack)</span>
-            <h3>منصة إدارة شبكة الصرّافات الآلية</h3>
-            <p>
-              بنيتُ المنصة الإلكترونية التي يدير بها مصرفٌ شبكة صرّافاته الآلية، بواجهتيها الأمامية والخلفية. تتابع حالة كل جهاز
-              والنقد الموجود فيه، وتدير <em>تغذية الصرّافات بالنقد</em> من إسناد المهمة إلى موظف حتى تأكيد الصرّاف لعملية التعبئة،
-              وتُخضع التغييرات الحساسة، كإضافة صرّاف أو تعديل ترقيم الأجهزة، إلى <em>سير عمل للموافقات</em>.
-              وتعمل جنباً إلى جنب مع تطبيق الصرّاف الذي يرتبط بها عبر مفاتيح خاصة بكل جهاز.
-            </p>
-            <ul class="tags">
-              <li>React.js</li><li>Material-UI</li><li>REST API</li><li>RBAC</li><li>سير الموافقات</li><li>عربي / إنجليزي</li>
+              <li>C# / .NET</li><li>CEN/XFS</li><li>الخوارزميات</li><li>التكامل مع العتاد</li><li>React.js</li><li>Material-UI</li><li>REST API</li><li>RBAC</li>
             </ul>
             <div class="case__links">
-              <a class="link-arrow" href="https://atm.dpdns.org/" target="_blank" rel="noopener">افتح الموقع <span>↗</span></a>
+              <a class="link-arrow" href="https://atm.dpdns.org/" target="_blank" rel="noopener">افتح المنصة <span>↗</span></a>
             </div>
           </div>
           <div class="case__visual" aria-hidden="true">
-            <div class="flow">
-              <div class="flow__step"><span>01</span>إضافة صرّاف والموافقة عليه</div>
-              <div class="flow__step"><span>02</span>إسناد موظف التغذية</div>
-              <div class="flow__step"><span>03</span>تعبئة الخزائن</div>
-              <div class="flow__step"><span>04</span>تأكيد الصرّاف للتعبئة</div>
-              <div class="flow__mods">
-                <i>لوحة المعلومات</i><i>الصرّافات</i><i>التغذية</i><i>الموافقات</i><i>الجلسات</i><i>الأدوار</i>
+            <div class="sys">
+              <div class="sys__node">
+                <span class="sys__label mono">الصرّاف · <bdi>.NET</bdi></span>
+                <h4>تطبيق الجهاز</h4>
+                <div class="sys__chips"><i>CEN/XFS</i><i>جشعة + تراجع</i><i>طبقة العتاد</i></div>
+              </div>
+              <div class="sys__link"><span>مرتبطان بمفاتيح الأجهزة</span></div>
+              <div class="sys__node sys__node--web">
+                <span class="sys__label mono">الويب · تطوير متكامل</span>
+                <h4>منصة الإدارة</h4>
+                <div class="sys__chips"><i>لوحة المعلومات</i><i>التغذية</i><i>الموافقات</i><i>الجلسات</i><i>الأدوار</i></div>
               </div>
             </div>
           </div>
         </article>
 
-        <!-- Case 4: ERPNext -->
-        <article class="case case--flip reveal">
+        <!-- Case 3: ERPNext -->
+        <article class="case reveal">
           <div class="case__meta">
-            <span class="case__num mono">04 / 05</span>
+            <span class="case__num mono">03 / 04</span>
             <span class="case__kicker">STH Company · قيادة التطبيق</span>
             <h3>تطبيق نظام ERPNext</h3>
             <p>
@@ -287,10 +256,10 @@
           </div>
         </article>
 
-        <!-- Case 5: AI agents -->
-        <article class="case reveal">
+        <!-- Case 4: AI agents -->
+        <article class="case case--flip reveal">
           <div class="case__meta">
-            <span class="case__num mono">05 / 05</span>
+            <span class="case__num mono">04 / 04</span>
             <span class="case__kicker">تدريب عملي · هندسة الذكاء الاصطناعي</span>
             <h3>وكلاء الذكاء الاصطناعي وRAG</h3>
             <p>
