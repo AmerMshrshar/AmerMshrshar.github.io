@@ -6,7 +6,7 @@
   const root = document.documentElement;
   const AR = root.lang === 'ar';
   const T = AR ? {
-    openMenu: 'فتح القائمة', closeMenu: 'إغلاق القائمة', local: 'بالتوقيت المحلي', copied: 'تم نسخ البريد الإلكتروني',
+    openMenu: 'فتح القائمة', closeMenu: 'إغلاق القائمة', copied: 'تم نسخ البريد الإلكتروني',
     left: (n) => `متبقٍّ ${n}`, invalid: '✕ أدخل مبلغاً صحيحاً',
     exceeds: (a, t) => `✕ المبلغ ${a} يتجاوز النقد المتوفر (${t})`,
     amount: (a) => `› المبلغ: ${a}`, greedyOk: '✓ وجدت الخوارزمية الجشعة تركيبة صالحة',
@@ -15,7 +15,7 @@
     dispense: (mix, n) => `← الصرف: ${mix} <span class="muted">(${n} أوراق)</span>`,
     none: '✕ لا توجد تركيبة صالحة بالأوراق المتوفرة',
   } : {
-    openMenu: 'Open menu', closeMenu: 'Close menu', local: 'local', copied: 'Email copied to clipboard',
+    openMenu: 'Open menu', closeMenu: 'Close menu', copied: 'Email copied to clipboard',
     left: (n) => `× ${n} left`, invalid: '✕ enter a positive amount',
     exceeds: (a, t) => `✕ ${a} exceeds cash available (${t})`,
     amount: (a) => `› amount: ${a}`, greedyOk: '✓ greedy found a mix',
@@ -121,12 +121,6 @@
     }, 2600);
   }
 
-  /* ---------- Local clock (Damascus) ---------- */
-  const clock = $('#clock');
-  const fmt = new Intl.DateTimeFormat('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Damascus' });
-  const updateClock = () => { clock.textContent = `${fmt.format(new Date())} ${T.local}`; };
-  updateClock();
-  setInterval(updateClock, 20000);
 
   /* ---------- Copy email ---------- */
   const toast = $('#toast');
