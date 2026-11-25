@@ -129,6 +129,14 @@
 
   $('#year').textContent = new Date().getFullYear();
 
+  /* ---------- Back to top ---------- */
+  $$('[data-to-top]').forEach((a) => a.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+    history.replaceState(null, '', location.pathname + location.search);
+    $('.brand').focus({ preventScroll: true });
+  }));
+
   const BACK = AR ? 'ArrowRight' : 'ArrowLeft';
   const FWD = AR ? 'ArrowLeft' : 'ArrowRight';
   const lb = $('#lightbox');
