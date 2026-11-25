@@ -340,6 +340,10 @@ function init(host, THREE) {
     el.addEventListener('pointerleave', () => { pinned = -1; hovered = -1; });
   });
 
+  const labelSize = [];
+  const measureLabels = () => labels.forEach((el, m) => { if (el) labelSize[m] = [el.offsetWidth, el.offsetHeight]; });
+  document.fonts?.ready.then(measureLabels);
+
   /* ---- Frame update ---- */
   let lastT = 0;
   const update = (t) => {
@@ -414,7 +418,10 @@ function init(host, THREE) {
       const s = moduleScreen(m);
       const dx = s.x - centre.x, dy = s.y - centre.y, len = Math.hypot(dx, dy) || 1;
       const k = Math.min(1, W / 520);
-      const x = s.x + (dx / len) * 54 * k, y = s.y + (dy / len) * 44 * k;
+      // keep each label fully inside the frame
+      const hw = (labelSize[m]?.[0] || 0) / 2 + 4, hh = (labelSize[m]?.[1] || 0) / 2 + 4;
+      const x = Math.min(W - hw, Math.max(hw, s.x + (dx / len) * 54 * k));
+      const y = Math.min(H - hh, Math.max(hh, s.y + (dy / len) * 44 * k));
       const shown = reduced ? 1 : clamp01((uniforms.uReveal.value - (m - 1) * SEG) / 0.5);
       const depth = s.z < -0.15 ? 0.55 : 1;
       const dim = n > 0 && n !== m ? 0.35 : depth;
@@ -440,6 +447,7 @@ function init(host, THREE) {
     const w = glHost.clientWidth, h = glHost.clientHeight;
     if (!w || !h) return;
     W = w; H = h;
+    measureLabels();
     renderer.setSize(w, h, false);
     camera.aspect = w / h;
     camera.updateProjectionMatrix();
@@ -463,4 +471,5 @@ function init(host, THREE) {
   }, { threshold: 0.05 }).observe(glHost);
 
   host.classList.add('is-ready');
+  requestAnimationFrame(resize);
 }
