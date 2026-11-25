@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=5" />
+  <link rel="stylesheet" href="styles.css?v=6" />
   <script>
     /* Apply saved theme before paint to avoid a flash */
     try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
@@ -174,33 +174,88 @@
               <span class="hint mono">login: admin / admin</span>
             </div>
           </div>
-          <div class="case__visual case__visual--shot">
-            <button type="button" class="shot" data-full="assets/acugnito/website.webp" data-caption="acugnito.com: the product website" aria-label="View larger: acugnito.com: the product website">
-              <span class="shot__bar" aria-hidden="true"><i></i><i></i><i></i><span class="mono">acugnito.com</span></span>
-              <img src="assets/acugnito/website-sm.webp" alt="Acugnito website home page" width="1000" height="625" loading="lazy" decoding="async" />
-            </button>
+          <div class="case__visual case__visual--modules">
+            <p class="modules__label mono">Six modules · one platform</p>
+            <ul class="modules">
+              <li class="module" style="--i:0"><span class="module__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0"/><path d="M16 5.2a3 3 0 0 1 0 5.6M17.5 14.2a5.5 5.5 0 0 1 3 4.8"/></svg></span><span><b>HRM</b><small>Employees · Leave · Self-service</small></span></li>
+              <li class="module" style="--i:1"><span class="module__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V11M10 20V5M16 20v-6M2.5 20.5h19"/></svg></span><span><b>Financials</b><small>General ledger · Receivables · Payables</small></span></li>
+              <li class="module" style="--i:2"><span class="module__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 8 12 3 3 8v8l9 5 9-5V8Z"/><path d="m3 8 9 5 9-5M12 13v8"/></svg></span><span><b>Inventory</b><small>Stock · Warehouses · Valuation</small></span></li>
+              <li class="module" style="--i:3"><span class="module__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/><path d="M19 20a3 3 0 0 1-3 2h-3"/></svg></span><span><b>Customer Service</b><small>Clients · Tickets · Pipeline</small></span></li>
+              <li class="module" style="--i:4"><span class="module__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1M9 10h6M9 14h6M9 17h3"/></svg></span><span><b>Service Management</b><small>Intake · Diagnosis · Repair orders</small></span></li>
+              <li class="module" style="--i:5"><span class="module__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M10.85 12.15 19 4l3 3-3 3-2-2-2 2-2-2-2.15 2.15"/></svg></span><span><b>Leasing</b><small>Right-of-use assets · Schedules · Obligations</small></span></li>
+            </ul>
           </div>
-          <div class="case__gallery">
-            <p class="case__gallery-label mono">Screens from the live product</p>
-            <div class="gallery">
-            <figure>
-              <button type="button" class="shot" data-full="assets/acugnito/sign-in.webp" data-caption="Sign in" aria-label="View larger: Sign in">
-                <img src="assets/acugnito/sign-in-sm.webp" alt="Sign-in page of the Acugnito ERP demo" width="1000" height="625" loading="lazy" decoding="async" />
-              </button>
-              <figcaption>Sign in</figcaption>
-            </figure>
-            <figure>
-              <button type="button" class="shot" data-full="assets/acugnito/general-ledger.webp" data-caption="General ledger" aria-label="View larger: General ledger">
-                <img src="assets/acugnito/general-ledger-sm.webp" alt="General ledger: ledger transaction list in Acugnito ERP" width="1000" height="695" loading="lazy" decoding="async" />
-              </button>
-              <figcaption>General ledger</figcaption>
-            </figure>
-            <figure>
-              <button type="button" class="shot" data-full="assets/acugnito/inventory.webp" data-caption="On-hand inventory" aria-label="View larger: On-hand inventory">
-                <img src="assets/acugnito/inventory-sm.webp" alt="Inventory management: on-hand inventory in Acugnito ERP" width="1000" height="695" loading="lazy" decoding="async" />
-              </button>
-              <figcaption>On-hand inventory</figcaption>
-            </figure>
+          <div class="showcase" data-showcase aria-roledescription="carousel" aria-label="Screens from the live product">
+            <div class="showcase__glow" aria-hidden="true"></div>
+            <div class="showcase__head">
+              <p class="case__gallery-label mono">Screens from the live product</p>
+              <p class="ps-count mono" dir="ltr" aria-hidden="true"><b>01</b> / 06</p>
+            </div>
+            <div class="ps-persp">
+              <div class="ps-rise">
+                <div class="ps-track">
+                <figure class="ps-slide is-front" id="ps-home" role="tabpanel" aria-roledescription="slide" aria-label="Home dashboard">
+                  <button type="button" class="ps-shot" data-full="assets/acugnito/home.webp" data-caption="Home dashboard" aria-label="View larger: Home dashboard">
+                    <span class="ps-tilt"><span class="ps-frame"><span class="ps-screen">
+                      <img src="assets/acugnito/home-md.webp" alt="Acugnito ERP home dashboard with workspaces, calendar and shortcuts" width="1400" height="722" loading="lazy" decoding="async" draggable="false" />
+                      <span class="ps-glare" aria-hidden="true"></span>
+                    </span></span></span>
+                  </button>
+                </figure>
+                <figure class="ps-slide is-next" id="ps-finance" role="tabpanel" aria-roledescription="slide" aria-label="Finance overview" aria-hidden="true">
+                  <button type="button" class="ps-shot" data-full="assets/acugnito/finance.webp" data-caption="Finance overview" aria-label="View larger: Finance overview" tabindex="-1">
+                    <span class="ps-tilt"><span class="ps-frame"><span class="ps-screen">
+                      <img src="assets/acugnito/finance-md.webp" alt="Finance dashboard showing revenue, net profit, margins and working capital" width="1400" height="722" loading="lazy" decoding="async" draggable="false" />
+                      <span class="ps-glare" aria-hidden="true"></span>
+                    </span></span></span>
+                  </button>
+                </figure>
+                <figure class="ps-slide is-back" id="ps-receivables" role="tabpanel" aria-roledescription="slide" aria-label="Accounts receivable" aria-hidden="true">
+                  <button type="button" class="ps-shot" data-full="assets/acugnito/receivables.webp" data-caption="Accounts receivable" aria-label="View larger: Accounts receivable" tabindex="-1">
+                    <span class="ps-tilt"><span class="ps-frame"><span class="ps-screen">
+                      <img src="assets/acugnito/receivables-md.webp" alt="Accounts receivable with aging bands, collection worklists and largest balances" width="1400" height="722" loading="lazy" decoding="async" draggable="false" />
+                      <span class="ps-glare" aria-hidden="true"></span>
+                    </span></span></span>
+                  </button>
+                </figure>
+                <figure class="ps-slide is-back" id="ps-journal" role="tabpanel" aria-roledescription="slide" aria-label="Posted general journal" aria-hidden="true">
+                  <button type="button" class="ps-shot" data-full="assets/acugnito/journal.webp" data-caption="Posted general journal" aria-label="View larger: Posted general journal" tabindex="-1">
+                    <span class="ps-tilt"><span class="ps-frame"><span class="ps-screen">
+                      <img src="assets/acugnito/journal-md.webp" alt="A posted general journal with balanced debit and credit lines" width="1400" height="722" loading="lazy" decoding="async" draggable="false" />
+                      <span class="ps-glare" aria-hidden="true"></span>
+                    </span></span></span>
+                  </button>
+                </figure>
+                <figure class="ps-slide is-back" id="ps-ledger" role="tabpanel" aria-roledescription="slide" aria-label="Ledger transactions" aria-hidden="true">
+                  <button type="button" class="ps-shot" data-full="assets/acugnito/ledger.webp" data-caption="Ledger transactions" aria-label="View larger: Ledger transactions" tabindex="-1">
+                    <span class="ps-tilt"><span class="ps-frame"><span class="ps-screen">
+                      <img src="assets/acugnito/ledger-md.webp" alt="Ledger transaction list grouped by account across three currencies" width="1400" height="722" loading="lazy" decoding="async" draggable="false" />
+                      <span class="ps-glare" aria-hidden="true"></span>
+                    </span></span></span>
+                  </button>
+                </figure>
+                <figure class="ps-slide is-prev" id="ps-inventory" role="tabpanel" aria-roledescription="slide" aria-label="Inventory analysis" aria-hidden="true">
+                  <button type="button" class="ps-shot" data-full="assets/acugnito/inventory.webp" data-caption="Inventory analysis" aria-label="View larger: Inventory analysis" tabindex="-1">
+                    <span class="ps-tilt"><span class="ps-frame"><span class="ps-screen">
+                      <img src="assets/acugnito/inventory-md.webp" alt="Inventory valuation, ABC classification, turnover and slow-moving stock" width="1400" height="788" loading="lazy" decoding="async" draggable="false" />
+                      <span class="ps-glare" aria-hidden="true"></span>
+                    </span></span></span>
+                  </button>
+                </figure>
+                </div>
+              </div>
+            </div>
+            <div class="ps-ui">
+              <button type="button" class="icon-btn ps-arrow" data-ps="prev" aria-label="Previous screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 6 8.5 12l6 6"/></svg></button>
+              <div class="ps-tabs" role="tablist" aria-label="Product screens">
+                <button type="button" class="ps-tab" role="tab" aria-controls="ps-home" aria-selected="true">Home<i aria-hidden="true"></i></button>
+                <button type="button" class="ps-tab" role="tab" aria-controls="ps-finance" aria-selected="false" tabindex="-1">Finance<i aria-hidden="true"></i></button>
+                <button type="button" class="ps-tab" role="tab" aria-controls="ps-receivables" aria-selected="false" tabindex="-1">Receivables<i aria-hidden="true"></i></button>
+                <button type="button" class="ps-tab" role="tab" aria-controls="ps-journal" aria-selected="false" tabindex="-1">Journal<i aria-hidden="true"></i></button>
+                <button type="button" class="ps-tab" role="tab" aria-controls="ps-ledger" aria-selected="false" tabindex="-1">Ledger<i aria-hidden="true"></i></button>
+                <button type="button" class="ps-tab" role="tab" aria-controls="ps-inventory" aria-selected="false" tabindex="-1">Inventory<i aria-hidden="true"></i></button>
+              </div>
+              <button type="button" class="icon-btn ps-arrow ps-arrow--next" data-ps="next" aria-label="Next screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 6 8.5 12l6 6"/></svg></button>
             </div>
           </div>
         </article>
@@ -288,16 +343,15 @@
             </ul>
           </div>
           <div class="case__visual" aria-hidden="true">
-            <div class="term">
-              <div class="term__bar"><i></i><i></i><i></i><span class="mono">agent.run()</span></div>
-              <ol class="term__body mono" id="term">
-                <li><span class="p">$</span> ask "What is the leasing policy?"</li>
-                <li class="t" style="--d:0"><span class="ok">✓</span> embed query</li>
-                <li class="t" style="--d:1"><span class="ok">✓</span> pinecone.search → 4 chunks</li>
-                <li class="t" style="--d:2"><span class="ok">✓</span> planner → tool: pdf_reader (MCP)</li>
-                <li class="t" style="--d:3"><span class="ok">✓</span> ground answer in sources</li>
-                <li class="t" style="--d:4"><span class="dot">●</span> answer ready <span class="dim">[p.12, p.14]</span></li>
-              </ol>
+            <div class="agent" data-agent>
+              <div class="agent__head">
+                <span class="agent__avatar"><svg viewBox="0 0 24 24"><path d="M12 3.5 13.7 9l5.8 1.7-5.8 1.8L12 18l-1.7-5.5-5.8-1.8L10.3 9Z"/></svg></span>
+                <span class="agent__title"><b>Document Q&amp;A agent</b><span>Grounded in your PDFs</span></span>
+                <span class="agent__pill mono">RAG · MCP</span>
+              </div>
+              <div class="agent__body"></div>
+              <div class="agent__composer"><span>Ask about your documents…</span><i><svg viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></svg></i></div>
+              <script type="application/json" class="agent__data">[{"q": "What notice does the leasing policy require?", "a": "Tenants must give 60 days' written notice before ending a lease early.", "s": "leasing-policy.pdf · p.12"}, {"q": "Summarise the late-payment penalties.", "a": "A 2% monthly fee applies after a 10-day grace period, capped at 10% of the rent due.", "s": "leasing-policy.pdf · p.14"}, {"q": "How did you find that?", "a": "I called pdf_reader over MCP, then ranked four Pinecone matches before answering.", "s": "planner → pdf_reader (MCP)"}]</script>
             </div>
           </div>
         </article>
@@ -468,6 +522,6 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="script.js?v=4" defer></script>
+  <script src="script.js?v=5" defer></script>
 </body>
 </html>

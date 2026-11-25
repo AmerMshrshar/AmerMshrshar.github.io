@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400..600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../styles.css?v=5" />
+  <link rel="stylesheet" href="../styles.css?v=6" />
   <script>
     try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
   </script>
@@ -174,33 +174,88 @@
               <span class="hint">بيانات الدخول: <bdi class="mono" dir="ltr">admin / admin</bdi></span>
             </div>
           </div>
-          <div class="case__visual case__visual--shot">
-            <button type="button" class="shot" data-full="../assets/acugnito/website-ar.webp" data-caption="acugnito.com: موقع المنتج" aria-label="عرض أكبر: acugnito.com: موقع المنتج">
-              <span class="shot__bar" aria-hidden="true"><i></i><i></i><i></i><span class="mono">acugnito.com</span></span>
-              <img src="../assets/acugnito/website-ar-sm.webp" alt="الصفحة الرئيسية لموقع Acugnito" width="1000" height="625" loading="lazy" decoding="async" />
-            </button>
+          <div class="case__visual case__visual--modules">
+            <p class="modules__label mono">ست وحدات · منصة واحدة</p>
+            <ul class="modules">
+              <li class="module" style="--i:0"><span class="module__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0"/><path d="M16 5.2a3 3 0 0 1 0 5.6M17.5 14.2a5.5 5.5 0 0 1 3 4.8"/></svg></span><span><b>الموارد البشرية</b><small>الموظفون · الإجازات · الخدمة الذاتية</small></span></li>
+              <li class="module" style="--i:1"><span class="module__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V11M10 20V5M16 20v-6M2.5 20.5h19"/></svg></span><span><b>المالية</b><small>دفتر الأستاذ · الذمم المدينة · الذمم الدائنة</small></span></li>
+              <li class="module" style="--i:2"><span class="module__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 8 12 3 3 8v8l9 5 9-5V8Z"/><path d="m3 8 9 5 9-5M12 13v8"/></svg></span><span><b>المخزون</b><small>المواد · المستودعات · التقييم</small></span></li>
+              <li class="module" style="--i:3"><span class="module__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/><path d="M19 20a3 3 0 0 1-3 2h-3"/></svg></span><span><b>خدمة العملاء</b><small>العملاء · التذاكر · الفرص</small></span></li>
+              <li class="module" style="--i:4"><span class="module__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1M9 10h6M9 14h6M9 17h3"/></svg></span><span><b>إدارة الخدمات</b><small>الاستقبال · التشخيص · أوامر الإصلاح</small></span></li>
+              <li class="module" style="--i:5"><span class="module__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M10.85 12.15 19 4l3 3-3 3-2-2-2 2-2-2-2.15 2.15"/></svg></span><span><b>التأجير</b><small>أصول حق الاستخدام · الجداول · الالتزامات</small></span></li>
+            </ul>
           </div>
-          <div class="case__gallery">
-            <p class="case__gallery-label mono">لقطات من المنتج الفعلي</p>
-            <div class="gallery">
-            <figure>
-              <button type="button" class="shot" data-full="../assets/acugnito/sign-in.webp" data-caption="تسجيل الدخول" aria-label="عرض أكبر: تسجيل الدخول">
-                <img src="../assets/acugnito/sign-in-sm.webp" alt="صفحة تسجيل الدخول في النسخة التجريبية من Acugnito ERP" width="1000" height="625" loading="lazy" decoding="async" />
-              </button>
-              <figcaption>تسجيل الدخول</figcaption>
-            </figure>
-            <figure>
-              <button type="button" class="shot" data-full="../assets/acugnito/general-ledger.webp" data-caption="دفتر الأستاذ العام" aria-label="عرض أكبر: دفتر الأستاذ العام">
-                <img src="../assets/acugnito/general-ledger-sm.webp" alt="دفتر الأستاذ العام: قائمة القيود في Acugnito ERP" width="1000" height="695" loading="lazy" decoding="async" />
-              </button>
-              <figcaption>دفتر الأستاذ العام</figcaption>
-            </figure>
-            <figure>
-              <button type="button" class="shot" data-full="../assets/acugnito/inventory.webp" data-caption="المخزون المتوفر" aria-label="عرض أكبر: المخزون المتوفر">
-                <img src="../assets/acugnito/inventory-sm.webp" alt="إدارة المخزون: المخزون المتوفر في Acugnito ERP" width="1000" height="695" loading="lazy" decoding="async" />
-              </button>
-              <figcaption>المخزون المتوفر</figcaption>
-            </figure>
+          <div class="showcase" data-showcase aria-roledescription="carousel" aria-label="لقطات من المنتج الفعلي">
+            <div class="showcase__glow" aria-hidden="true"></div>
+            <div class="showcase__head">
+              <p class="case__gallery-label mono">لقطات من المنتج الفعلي</p>
+              <p class="ps-count mono" dir="ltr" aria-hidden="true"><b>01</b> / 06</p>
+            </div>
+            <div class="ps-persp">
+              <div class="ps-rise">
+                <div class="ps-track">
+                <figure class="ps-slide is-front" id="ps-home" role="tabpanel" aria-roledescription="slide" aria-label="لوحة التحكم الرئيسية">
+                  <button type="button" class="ps-shot" data-full="../assets/acugnito/home.webp" data-caption="لوحة التحكم الرئيسية" aria-label="عرض أكبر: لوحة التحكم الرئيسية">
+                    <span class="ps-tilt"><span class="ps-frame"><span class="ps-screen">
+                      <img src="../assets/acugnito/home-md.webp" alt="لوحة التحكم الرئيسية في Acugnito ERP مع مساحات العمل والتقويم والاختصارات" width="1400" height="722" loading="lazy" decoding="async" draggable="false" />
+                      <span class="ps-glare" aria-hidden="true"></span>
+                    </span></span></span>
+                  </button>
+                </figure>
+                <figure class="ps-slide is-next" id="ps-finance" role="tabpanel" aria-roledescription="slide" aria-label="نظرة عامة على المالية" aria-hidden="true">
+                  <button type="button" class="ps-shot" data-full="../assets/acugnito/finance.webp" data-caption="نظرة عامة على المالية" aria-label="عرض أكبر: نظرة عامة على المالية" tabindex="-1">
+                    <span class="ps-tilt"><span class="ps-frame"><span class="ps-screen">
+                      <img src="../assets/acugnito/finance-md.webp" alt="لوحة المالية: الإيرادات وصافي الربح والهوامش ورأس المال العامل" width="1400" height="722" loading="lazy" decoding="async" draggable="false" />
+                      <span class="ps-glare" aria-hidden="true"></span>
+                    </span></span></span>
+                  </button>
+                </figure>
+                <figure class="ps-slide is-back" id="ps-receivables" role="tabpanel" aria-roledescription="slide" aria-label="الذمم المدينة" aria-hidden="true">
+                  <button type="button" class="ps-shot" data-full="../assets/acugnito/receivables.webp" data-caption="الذمم المدينة" aria-label="عرض أكبر: الذمم المدينة" tabindex="-1">
+                    <span class="ps-tilt"><span class="ps-frame"><span class="ps-screen">
+                      <img src="../assets/acugnito/receivables-md.webp" alt="الذمم المدينة: فئات أعمار الديون وقوائم التحصيل وأكبر الأرصدة" width="1400" height="722" loading="lazy" decoding="async" draggable="false" />
+                      <span class="ps-glare" aria-hidden="true"></span>
+                    </span></span></span>
+                  </button>
+                </figure>
+                <figure class="ps-slide is-back" id="ps-journal" role="tabpanel" aria-roledescription="slide" aria-label="قيد يومية مُرحَّل" aria-hidden="true">
+                  <button type="button" class="ps-shot" data-full="../assets/acugnito/journal.webp" data-caption="قيد يومية مُرحَّل" aria-label="عرض أكبر: قيد يومية مُرحَّل" tabindex="-1">
+                    <span class="ps-tilt"><span class="ps-frame"><span class="ps-screen">
+                      <img src="../assets/acugnito/journal-md.webp" alt="قيد يومية عام مُرحَّل بسطور مدينة ودائنة متوازنة" width="1400" height="722" loading="lazy" decoding="async" draggable="false" />
+                      <span class="ps-glare" aria-hidden="true"></span>
+                    </span></span></span>
+                  </button>
+                </figure>
+                <figure class="ps-slide is-back" id="ps-ledger" role="tabpanel" aria-roledescription="slide" aria-label="حركات دفتر الأستاذ" aria-hidden="true">
+                  <button type="button" class="ps-shot" data-full="../assets/acugnito/ledger.webp" data-caption="حركات دفتر الأستاذ" aria-label="عرض أكبر: حركات دفتر الأستاذ" tabindex="-1">
+                    <span class="ps-tilt"><span class="ps-frame"><span class="ps-screen">
+                      <img src="../assets/acugnito/ledger-md.webp" alt="قائمة حركات دفتر الأستاذ مجمّعة حسب الحساب بثلاث عملات" width="1400" height="722" loading="lazy" decoding="async" draggable="false" />
+                      <span class="ps-glare" aria-hidden="true"></span>
+                    </span></span></span>
+                  </button>
+                </figure>
+                <figure class="ps-slide is-prev" id="ps-inventory" role="tabpanel" aria-roledescription="slide" aria-label="تحليل المخزون" aria-hidden="true">
+                  <button type="button" class="ps-shot" data-full="../assets/acugnito/inventory.webp" data-caption="تحليل المخزون" aria-label="عرض أكبر: تحليل المخزون" tabindex="-1">
+                    <span class="ps-tilt"><span class="ps-frame"><span class="ps-screen">
+                      <img src="../assets/acugnito/inventory-md.webp" alt="تقييم المخزون وتصنيف ABC ومعدل الدوران والمواد بطيئة الحركة" width="1400" height="788" loading="lazy" decoding="async" draggable="false" />
+                      <span class="ps-glare" aria-hidden="true"></span>
+                    </span></span></span>
+                  </button>
+                </figure>
+                </div>
+              </div>
+            </div>
+            <div class="ps-ui">
+              <button type="button" class="icon-btn ps-arrow" data-ps="prev" aria-label="الشاشة السابقة"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 6 8.5 12l6 6"/></svg></button>
+              <div class="ps-tabs" role="tablist" aria-label="شاشات المنتج">
+                <button type="button" class="ps-tab" role="tab" aria-controls="ps-home" aria-selected="true">الرئيسية<i aria-hidden="true"></i></button>
+                <button type="button" class="ps-tab" role="tab" aria-controls="ps-finance" aria-selected="false" tabindex="-1">المالية<i aria-hidden="true"></i></button>
+                <button type="button" class="ps-tab" role="tab" aria-controls="ps-receivables" aria-selected="false" tabindex="-1">الذمم المدينة<i aria-hidden="true"></i></button>
+                <button type="button" class="ps-tab" role="tab" aria-controls="ps-journal" aria-selected="false" tabindex="-1">القيود<i aria-hidden="true"></i></button>
+                <button type="button" class="ps-tab" role="tab" aria-controls="ps-ledger" aria-selected="false" tabindex="-1">دفتر الأستاذ<i aria-hidden="true"></i></button>
+                <button type="button" class="ps-tab" role="tab" aria-controls="ps-inventory" aria-selected="false" tabindex="-1">المخزون<i aria-hidden="true"></i></button>
+              </div>
+              <button type="button" class="icon-btn ps-arrow ps-arrow--next" data-ps="next" aria-label="الشاشة التالية"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 6 8.5 12l6 6"/></svg></button>
             </div>
           </div>
         </article>
@@ -288,16 +343,15 @@
             </ul>
           </div>
           <div class="case__visual" aria-hidden="true">
-            <div class="term" dir="ltr">
-              <div class="term__bar"><i></i><i></i><i></i><span class="mono">agent.run()</span></div>
-              <ol class="term__body mono" id="term">
-                <li><span class="p">$</span> ask "<bdi dir="rtl">ما سياسة التأجير؟</bdi>"</li>
-                <li class="t" style="--d:0"><span class="ok">✓</span> embed query</li>
-                <li class="t" style="--d:1"><span class="ok">✓</span> pinecone.search → 4 chunks</li>
-                <li class="t" style="--d:2"><span class="ok">✓</span> planner → tool: pdf_reader (MCP)</li>
-                <li class="t" style="--d:3"><span class="ok">✓</span> ground answer in sources</li>
-                <li class="t" style="--d:4"><span class="dot">●</span> answer ready <span class="dim">[p.12, p.14]</span></li>
-              </ol>
+            <div class="agent" data-agent>
+              <div class="agent__head">
+                <span class="agent__avatar"><svg viewBox="0 0 24 24"><path d="M12 3.5 13.7 9l5.8 1.7-5.8 1.8L12 18l-1.7-5.5-5.8-1.8L10.3 9Z"/></svg></span>
+                <span class="agent__title"><b>وكيل الأسئلة والأجوبة</b><span>مستند إلى ملفات PDF</span></span>
+                <span class="agent__pill mono">RAG · MCP</span>
+              </div>
+              <div class="agent__body"></div>
+              <div class="agent__composer"><span>اسأل عن مستنداتك…</span><i><svg viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></svg></i></div>
+              <script type="application/json" class="agent__data">[{"q": "ما مدة الإشعار المطلوبة في سياسة التأجير؟", "a": "يجب على المستأجر تقديم إشعار خطي قبل 60 يوماً من إنهاء العقد مبكراً.", "s": "leasing-policy.pdf · ص 12"}, {"q": "لخّص غرامات التأخر في السداد.", "a": "تُفرض رسوم شهرية بنسبة 2% بعد فترة سماح مدتها 10 أيام، بحد أقصى 10% من الإيجار المستحق.", "s": "leasing-policy.pdf · ص 14"}, {"q": "كيف وصلتَ إلى هذه الإجابة؟", "a": "استدعيتُ أداة pdf_reader عبر MCP، ثم رتّبتُ أربعة مقاطع من Pinecone قبل صياغة الإجابة.", "s": "planner → pdf_reader (MCP)"}]</script>
             </div>
           </div>
         </article>
@@ -468,6 +522,6 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="../script.js?v=4" defer></script>
+  <script src="../script.js?v=5" defer></script>
 </body>
 </html>
